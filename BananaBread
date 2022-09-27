@@ -1,0 +1,102 @@
+# Bread
+Bread
+
+package Intermediate2150;
+
+public class BananaBread extends Pastry{
+
+    double banana;
+    double flour;
+    double sugar;
+    double milk;
+    double butter;
+    double egg;
+
+    public BananaBread(String ingredients, String recipe, double flour, double water, double salt, double sugar,
+                       double bakingPowder, double yeast, double ripeSourdoughStarter, double pastryFlour,
+                       double banana,  double milk, double butter, double egg) {
+        super(ingredients, recipe, flour, water, salt, sugar, bakingPowder, yeast, ripeSourdoughStarter, pastryFlour);
+        this.banana = banana;
+        this.milk = milk;
+        this.butter = butter;
+        this.egg = egg;
+    }
+
+    public double getBanana() {
+        return banana;
+    }
+
+    public void setBanana(double banana) {
+        this.banana = banana;
+    }
+
+    @Override
+    public double getFlour() {
+        return flour;
+    }
+
+    @Override
+    public void setFlour(double flour) {
+        this.flour = flour;
+    }
+
+    @Override
+    public double getSugar() {
+        return sugar;
+    }
+
+    @Override
+    public void setSugar(double sugar) {
+        this.sugar = sugar;
+    }
+
+    public double getMilk() {
+        return milk;
+    }
+
+    public void setMilk(double milk) {
+        this.milk = milk;
+    }
+
+    public double getButter() {
+        return butter;
+    }
+
+    public void setButter(double butter) {
+        this.butter = butter;
+    }
+
+    public double getEgg() {
+        return egg;
+    }
+
+    public void setEgg(double egg) {
+        this.egg = egg;
+    }
+    public String isRecipe(){
+        return ("mix flour, water,  salt,  sugar,  baking Powder, yeast, ripe sourdough starter" +
+                " Make the dough" +
+                "Bulk Rise" +
+                "Stretch and forld the dough" +
+                "Cut and shape the dough" +
+                "Second rise" +
+                "Preheat the oven to 450 °F towards the tail end of the second rise." +
+                "Spray the loaf with luke warm water." +
+                "Bake the bread at 400 °F for 20 minutes, until deep golden brown." +
+                "Remove the bread from the oven." +
+                "Let the bread cool until good to eat.");
+    }
+
+    @Override
+    public String toString() {
+        return "BananaBread{" +
+                "banana=" + banana +
+                ", flour=" + flour +
+                ", sugar=" + sugar +
+                ", milk=" + milk +
+                ", butter=" + butter +
+                ", egg=" + egg +
+                '}';
+    }
+}
+
